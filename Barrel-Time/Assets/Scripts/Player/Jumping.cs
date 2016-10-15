@@ -58,7 +58,7 @@ public class Jumping : MonoBehaviour {
 	}
 
   bool isGrounded() {
-    RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, -Vector3.up, 1f);
+    RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, -Vector3.up, 0.2f);
     if (hits.Length > 1) {
       if (hits[1].transform.tag == "Floor") {
         //print("yeah");

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class TestFlavorText : MonoBehaviour {
@@ -7,10 +8,11 @@ public class TestFlavorText : MonoBehaviour {
   public float threshhold;
 
   private float counter;
-  private GUIText display;
+  private Text display;
 
-  void OnAwake() {
-    display = GetComponent<GUIText>();
+  void Awake() {
+    display = GetComponent<Text>();
+    display.text = getRandomFromTexts();
   }
 
 	// Use this for initialization
@@ -20,12 +22,15 @@ public class TestFlavorText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-    if (counter >= threshhold) {
 
+    if (counter > ScoreManager.score % threshhold) {
+      display.text = getRandomFromTexts();
     }
+
+    counter = ScoreManager.score % threshhold;
 	}
 
-  //string getRandomFromTexts() {
-  //  return 
-  //}
+  string getRandomFromTexts() {
+    return texts[Random.Range(0,texts.Length)];
+  }
 }
