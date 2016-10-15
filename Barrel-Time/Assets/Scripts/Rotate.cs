@@ -6,7 +6,7 @@ public class Rotate : MonoBehaviour {
      float rotationMagnitude;
      void Awake () {
           rotationMagnitude = 0.5f;
-          rotationVector = new Vector3(0f,rotationMagnitude,0f);
+          rotationVector = new Vector3(0f, 0f, rotationMagnitude);
      }
 	// Use this for initialization
 	void Start () {
