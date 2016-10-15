@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameOver : MonoBehaviour {
 
-    private SpriteRenderer gameOver;
+    public SpriteRenderer gameOver;
 	// Use this for initialization
 	void Start () {
         gameOver = gameObject.GetComponent<SpriteRenderer>();
@@ -19,4 +19,5 @@ public class GameOver : MonoBehaviour {
     {
         gameOver.enabled = true;
     }
+
 }
