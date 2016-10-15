@@ -171,7 +171,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 792338624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15330577, y: -3.6699178, z: -5.37}
+  m_LocalPosition: {x: 0.15330577, y: -0.59, z: -5.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -186,6 +186,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1883205063}
   - 212: {fileID: 1883205062}
+  - 114: {fileID: 1883205064}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -239,3 +240,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1883205064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883205061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19366283195e9014080104fbdcb942ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
