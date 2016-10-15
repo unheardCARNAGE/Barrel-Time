@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player
   - Lava
+  - New Tag
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Game Over
   - 
   - 
   - 
@@ -40,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Game Over
+    uniqueID: 4041658647
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
