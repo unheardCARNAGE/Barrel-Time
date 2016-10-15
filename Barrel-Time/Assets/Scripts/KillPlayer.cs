@@ -8,6 +8,8 @@ public class KillPlayer : MonoBehaviour {
         if (col.gameObject.tag == "Lava")
         {
             Destroy(gameObject);
+            var dead = GameObject.FindObjectOfType<GameOver>();
+            dead.DisplayScreen();
         }
     }
 
@@ -16,6 +18,6 @@ public class KillPlayer : MonoBehaviour {
     }
 
 	public void OnBecameInvisible() {
-          GameController.EndGame();
+          //GameController.EndGame();
      }
 }
