@@ -5,7 +5,9 @@ public class TestSpawnPlatforms : MonoBehaviour {
 
   public TestPlatformMove platform;
   public float spawn_rate;
+  
   private float timer;
+
 
 	// Use this for initialization
 	void Start () {
@@ -25,7 +27,7 @@ public class TestSpawnPlatforms : MonoBehaviour {
       TestPlatformMove go = (TestPlatformMove)Instantiate(platform);
 
       float t = 0.6f;
-      float r = 9f;
+      float r = Random.Range(7f,10f);
 
       Vector2 pPos = polarToCoord((Mathf.PI * 2f) * t, r);
       go.transform.Rotate(new Vector3(0, 0, 90 + (t * 360f)));
