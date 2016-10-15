@@ -24,14 +24,10 @@ public class Jumping : MonoBehaviour {
 	}
 
   void OnCollisionEnter2D(Collision2D coll) {
-    if (coll.gameObject.name == "floor") {
-      can_jump = true;
-    }
+    can_jump = true;
   }
 
   void OnCollisionExit2D(Collision2D coll) {
-    if(coll.gameObject.name == "floor") {
-      can_jump = false;
-    }
+    can_jump = false;
   }
 }
