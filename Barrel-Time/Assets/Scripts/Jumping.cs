@@ -5,7 +5,7 @@ public class Jumping : MonoBehaviour {
 
   public float vertical_speed;
   private Rigidbody2D player_rigid_body;
-  public bool can_jump = false;
+  private bool can_jump = false;
 
   void Awake() {
     player_rigid_body = GetComponent<Rigidbody2D>();
