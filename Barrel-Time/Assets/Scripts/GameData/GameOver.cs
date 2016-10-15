@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour {
 
-    public SpriteRenderer gameOver;
+    private SpriteRenderer gameOver;
+     public GameObject restartButton;
 	// Use this for initialization
 	void Start () {
         gameOver = gameObject.GetComponent<SpriteRenderer>();
-        gameOver.enabled = false;
+        restartButton.SetActive(gameOver.enabled = false);
 	}
 	
 	// Update is called once per frame
@@ -17,7 +18,7 @@ public class GameOver : MonoBehaviour {
 
     public void DisplayScreen()
     {
-        gameOver.enabled = true;
+          restartButton.SetActive(gameOver.enabled = true);
     }
 
 }
