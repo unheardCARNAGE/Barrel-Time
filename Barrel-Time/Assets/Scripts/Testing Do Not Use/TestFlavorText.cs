@@ -24,4 +24,8 @@ public class TestFlavorText : MonoBehaviour {
 
     }
 	}
+
+  //string getRandomFromTexts() {
+  //  return 
+  //}
 }
