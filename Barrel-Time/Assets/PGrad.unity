@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f46c8e90383c8a4a988ae48a2526a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOver: {fileID: 0}
+  restartButton: {fileID: 2070782886}
 --- !u!4 &1822209031
 Transform:
   m_ObjectHideFlags: 0
