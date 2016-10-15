@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TestSpawnPlatforms : MonoBehaviour {
+public class SpawnPlatforms : MonoBehaviour {
 
-  public TestPlatformMove platform;
+  public PlatformMove platform;
   public float spawn_rate;
   
   private float timer;
@@ -24,7 +24,7 @@ public class TestSpawnPlatforms : MonoBehaviour {
 	void Update () {
     if (timer >= spawn_rate && spawn_rate > 0) {
       timer -= spawn_rate;
-      TestPlatformMove go = (TestPlatformMove)Instantiate(platform);
+      PlatformMove go = (PlatformMove)Instantiate(platform);
 
       float t = 0.6f;
       float r = Random.Range(7f,10f);

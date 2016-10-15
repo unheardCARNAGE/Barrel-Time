@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TestPlatformMove : MonoBehaviour {
+public class PlatformMove : MonoBehaviour {
 
   public float move_speed;
   private bool has_been_seen;
