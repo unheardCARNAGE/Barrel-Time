@@ -3,11 +3,11 @@ using System.Collections;
 
 public class platform_gen : MonoBehaviour {
 
-    public GameObject cubePrefab;
+    public GameObject squarePrefab;
 
     void awake()
     {
-        Instantiate(cubePrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(squarePrefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 	// Use this for initialization
 	void Start () {
