@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Jumping : MonoBehaviour {
 
@@ -58,10 +59,30 @@ public class Jumping : MonoBehaviour {
 	}
 
   bool isGrounded() {
-    RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, -Vector3.up, 0.2f);
-    if (hits.Length > 1) {
-      if (hits[1].transform.tag == "Floor") {
-        //print("yeah");
+    RaycastHit2D[] rightHits = Physics2D.RaycastAll(transform.position + (Vector3.right * 0.4f), -Vector3.up, 0.2f);
+    RaycastHit2D[] leftHits = Physics2D.RaycastAll(transform.position + (Vector3.left * 0.4f), -Vector3.up, 0.2f);
+    RaycastHit2D[] centerHits = Physics2D.RaycastAll(transform.position, -Vector3.up, 0.2f);
+
+    //print(centerHits.Length);
+
+    if (raycastArrayContainsObjectWithTag(leftHits, "Floor")) {
+      return true;
+    }
+
+    if (raycastArrayContainsObjectWithTag(leftHits, "Floor")) {
+      return true;
+    }
+
+    if (raycastArrayContainsObjectWithTag(centerHits,"Floor")) {
+      return true;
+    }
+
+    return false;
+  }
+
+  bool raycastArrayContainsObjectWithTag(RaycastHit2D[] hits, string tag) {
+    foreach (RaycastHit2D hit in hits) {
+      if (hit.transform.tag == tag) {
         return true;
       }
     }

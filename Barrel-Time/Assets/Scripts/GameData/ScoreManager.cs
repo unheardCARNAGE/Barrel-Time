@@ -17,6 +17,10 @@ public class ScoreManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+       if (Input.GetKeyDown(KeyCode.Alpha0)) {
+      PlayerPrefs.SetInt("Score", 0);
+       }
+
         text.text = "" + score;
 
     }
