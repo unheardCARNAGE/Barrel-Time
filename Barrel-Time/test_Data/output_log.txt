@@ -1,0 +1,71 @@
+Initialize engine version: 5.4.2f1 (94e3a60ee258)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 5500 (ID=0x1616)
+    Vendor:   Intel
+    VRAM:     2111 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.243 seconds
+Platform assembly: C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\timch\Documents\GitHub\Barrel-Time\Barrel-Time\test_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on GameController
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 375)
+
+desktop: 3200x1800 60Hz; virtual: 3200x1800 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.874747 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.807633 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.363428 ms (FindLiveObjects: 0.032190 ms CreateObjectMapping: 0.025659 ms MarkObjects: 0.222535 ms  DeleteObjects: 0.055050 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3e60 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.464221 ms
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 273.
+Total: 2.742274 ms (FindLiveObjects: 0.052718 ms CreateObjectMapping: 0.064847 ms MarkObjects: 0.561237 ms  DeleteObjects: 2.060671 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.056694 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.399351 ms (FindLiveObjects: 0.028458 ms CreateObjectMapping: 0.022860 ms MarkObjects: 0.277119 ms  DeleteObjects: 0.069513 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.092395 ms
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 273.
+Total: 2.281807 ms (FindLiveObjects: 0.072312 ms CreateObjectMapping: 0.054584 ms MarkObjects: 0.651745 ms  DeleteObjects: 1.502232 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.824361 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.425477 ms (FindLiveObjects: 0.025192 ms CreateObjectMapping: 0.023326 ms MarkObjects: 0.306511 ms  DeleteObjects: 0.069979 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.712638 ms
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 273.
+Total: 1.627729 ms (FindLiveObjects: 0.074178 ms CreateObjectMapping: 0.049918 ms MarkObjects: 0.662941 ms  DeleteObjects: 0.836025 ms)
+
