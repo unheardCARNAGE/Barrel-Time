@@ -20,5 +20,4 @@ public class GameOver : MonoBehaviour {
     {
           restartButton.SetActive(gameOver.enabled = true);
     }
-
 }

@@ -5,7 +5,11 @@ public class SpawnPlatforms : MonoBehaviour {
 
   public PlatformMove platform;
   public float spawn_rate;
-  
+  public float min_radius;
+  public float max_radius;
+  public float max_theta;
+  public float min_theta;
+
   private float timer;
 
 
@@ -26,8 +30,8 @@ public class SpawnPlatforms : MonoBehaviour {
       timer -= spawn_rate;
       PlatformMove go = (PlatformMove)Instantiate(platform);
 
-      float t = 0.6f;
-      float r = Random.Range(7f,10f);
+      float t = Random.Range(min_theta, max_theta);
+      float r = Random.Range(min_radius, max_radius);
 
       Vector2 pPos = polarToCoord((Mathf.PI * 2f) * t, r);
       go.transform.Rotate(new Vector3(0, 0, 90 + (t * 360f)));
