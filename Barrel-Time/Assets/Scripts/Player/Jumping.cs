@@ -4,6 +4,7 @@ using System;
 
 public class Jumping : MonoBehaviour {
 
+    public int points;
   public float vertical_speed;
   public float floating_length;
   public float gravity_scale;
@@ -52,7 +53,7 @@ public class Jumping : MonoBehaviour {
         player_rigid_body.velocity = new Vector3(0, vertical_speed, 0);
         player_rigid_body.gravityScale = 0;
         floating_timer = floating_length;
-        ScoreManager.score += 100;
+        ScoreManager.score += points;
         is_floating = true;
       }
     }

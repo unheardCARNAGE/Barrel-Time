@@ -13,9 +13,8 @@ public class HammerPowerUp : MonoBehaviour {
     private int originalPoints;
 
 	// Use this for initialization
-	void Awake ()
+	void Start ()
     {
-        timer = Time.time;
         movement = .2f;
         player = GameObject.FindGameObjectWithTag("Player");
         jumpScript = player.GetComponent<Jumping>();
@@ -25,9 +24,9 @@ public class HammerPowerUp : MonoBehaviour {
 
     void Update()
     {
-        elapsed = Time.time - timer;
+        timeLimit -= Time.deltaTime;
         transform.position = new Vector3(transform.position.x + movement, transform.position.y, transform.position.z);
-        if (elapsed >= timeLimit)
+        if (timeLimit <= 0)
             DestroyHammer();
     }
 
@@ -43,12 +42,13 @@ public class HammerPowerUp : MonoBehaviour {
     public void DestroyHammer()
     {
         jumpScript.points = originalPoints;
+        //print(originalPoints.ToString());
         Destroy(gameObject);
 
     }
 
     private void OnDestroy()
     {
-        jumpScript.points = originalPoints;
+        //jumpScript.points = originalPoints;
     }
 }
