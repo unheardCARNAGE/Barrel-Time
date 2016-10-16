@@ -40,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1000011774286938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -5.74, z: -2.19}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,9 +73,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.025979789, y: 0.40969437}
+  m_Offset: {x: 0.03186247, y: 0.13083798}
   serializedVersion: 2
-  m_Size: {x: 1.8001816, y: 0.6995283}
+  m_Size: {x: 0.7259744, y: 0.30708447}
 --- !u!95 &95000012064927120
 Animator:
   serializedVersion: 3
@@ -147,7 +147,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3202d972eab418947b3510058543e8ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ad960d84c78d8d7448bf70603a90435e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
