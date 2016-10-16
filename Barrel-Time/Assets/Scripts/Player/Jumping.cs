@@ -12,6 +12,7 @@ public class Jumping : MonoBehaviour {
   private bool start_falling;
   private float floating_timer;
   private bool is_floating;
+  private Animator anim;
 
   private Rigidbody2D player_rigid_body;
 
@@ -20,6 +21,7 @@ public class Jumping : MonoBehaviour {
     floating_timer = 0;
     player_rigid_body.gravityScale = 0;
     is_floating = false;
+    anim = GetComponent<Animator>();
   }
 
 	// Use this for initialization
@@ -29,6 +31,9 @@ public class Jumping : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+    bool grounded = isGrounded();
+
     if (start_falling == false && Input.GetKeyDown(KeyCode.Space)) {
       start_falling = true;
       player_rigid_body.gravityScale = gravity_scale;
@@ -49,12 +54,19 @@ public class Jumping : MonoBehaviour {
         player_rigid_body.gravityScale = gravity_scale;
       }
 
-      if (isGrounded() && Input.GetKeyDown(KeyCode.Space)) {
+      if (grounded && Input.GetKeyDown(KeyCode.Space)) {
         player_rigid_body.velocity = new Vector3(0, vertical_speed, 0);
         player_rigid_body.gravityScale = 0;
         floating_timer = floating_length;
         ScoreManager.score += points;
         is_floating = true;
+      }
+
+      if (grounded) {
+        anim.SetBool("IsJumping", false);
+      }
+      else {
+        anim.SetBool("IsJumping", true);
       }
     }
     

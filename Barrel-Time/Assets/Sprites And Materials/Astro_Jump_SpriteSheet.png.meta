@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: 21137c24414348e46b7850713286d768
-timeCreated: 1476649941
+guid: 600d89032c30dce45b94a355985c4185
+timeCreated: 1476648143
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Score_Box_0
+    21300000: Astro_Jump_SpriteSheet_0
+    21300002: Astro_Jump_SpriteSheet_1
+    21300004: Astro_Jump_SpriteSheet_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -45,7 +47,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 26
+  spritePixelsToUnits: 37
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
@@ -54,16 +56,42 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Score_Box_0
+      name: Astro_Jump_SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 32
-        width: 135
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 3, z: 3, w: 3}
+        x: 70
+        y: 2
+        width: 37
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Astro_Jump_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 6
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Astro_Jump_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 6
+        width: 29
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []
