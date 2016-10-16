@@ -11,8 +11,9 @@ public class GameOver : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gameOver = gameObject.GetComponent<SpriteRenderer>();
-    source = GetComponent<AudioSource>();
+   source = GetComponent<AudioSource>();
         restartButton.SetActive(gameOver.enabled = false);
+ 
 	}
 	
 	// Update is called once per frame
@@ -23,6 +24,8 @@ public class GameOver : MonoBehaviour {
     public void DisplayScreen()
     {
           restartButton.SetActive(gameOver.enabled = true);
+       
+
         source.Play();
 
     }

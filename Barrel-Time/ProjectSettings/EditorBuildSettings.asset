@@ -7,3 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Master Scenes/MainMenu.unity
+  - enabled: 1
+    path: Assets/Master Scenes/EasyMode.unity
+  - enabled: 1
+    path: Assets/Master Scenes/HardMode.unity

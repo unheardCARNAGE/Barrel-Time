@@ -14,12 +14,18 @@ public class EventManager : MonoBehaviour {
 	}
 
   public void loadHardMode() {
-    //Application.LoadLevel();
+    Application.LoadLevel("HardMode");
   }
 
   public void loadEasyMode() {
-    //
+        //
+        Application.LoadLevel("EasyMode");
   }
+
+  public void loadMenu()
+    {
+        Application.LoadLevel("MainMenu");
+    }
 
   public void quitGame() {
     Application.Quit();
