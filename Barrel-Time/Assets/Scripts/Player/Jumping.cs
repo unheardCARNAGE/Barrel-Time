@@ -48,10 +48,11 @@ public class Jumping : MonoBehaviour {
         player_rigid_body.gravityScale = gravity_scale;
       }
 
-      if (isGrounded() && Input.GetKey(KeyCode.Space)) {
+      if (isGrounded() && Input.GetKeyDown(KeyCode.Space)) {
         player_rigid_body.velocity = new Vector3(0, vertical_speed, 0);
         player_rigid_body.gravityScale = 0;
         floating_timer = floating_length;
+        ScoreManager.score += 100;
         is_floating = true;
       }
     }
