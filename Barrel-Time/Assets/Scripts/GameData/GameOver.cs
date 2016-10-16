@@ -19,5 +19,7 @@ public class GameOver : MonoBehaviour {
     public void DisplayScreen()
     {
           restartButton.SetActive(gameOver.enabled = true);
+        GetComponent<AudioSource>().Play();
+
     }
 }
