@@ -23,7 +23,7 @@ GameObject:
   - 114: {fileID: 114000013027143692}
   - 212: {fileID: 212000014250166034}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: Platform1
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010176655306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.082901835, y: -1.3852367, z: 0}
+  m_LocalPosition: {x: 17.055809, y: -2.3243208, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -53,9 +53,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.00000011920929, y: 0.5862484}
+  m_Offset: {x: 0, y: 0.08097267}
   serializedVersion: 2
-  m_Size: {x: 2.0992148, y: 0.4137535}
+  m_Size: {x: 2.0992148, y: 0.7506046}
 --- !u!114 &114000013027143692
 MonoBehaviour:
   m_ObjectHideFlags: 1
